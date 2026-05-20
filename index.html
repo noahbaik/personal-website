@@ -1,11 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>My Personal Site</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.4/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-  <!-- Add your HTML content here -->
+
+    <!-- Navigation -->
+    <nav>
+        <ul>
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#bio">Bio</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#hobbies">Hobbies</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+        <div class="hero-text">
+            <h2>Hello, I'm Noah</h2>
+            <p>
+                Computer Engineering undergrad @ Boston University building projects.
+            </p>
+        </div>
+    </section>
+
+    <!-- Bio Section -->
+    <section id="bio" class="section">
+        <h2>About Me</h2>
+        <img src="img/me.jpg" alt="Me" class="profile-photo">
+        <p>
+            I am a college student interested in technology, programming, and design.
+            This website will showcase projects I create throughout my web development course.
+        </p>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section">
+        <h2>Projects</h2>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section">
+        <h2>Skills</h2>
+
+        <div class="card-container">
+            <div class="card">
+                <i class="fa-solid fa-code skill-icon" aria-hidden="true"></i>
+                <h3>HTML + CSS</h3>
+                <img src="img/code.png" alt="Code icon" class="skill-card-image">
+                <p>Building the structure and styling of websites.</p>
+            </div>
+
+            <div class="card">
+                <i class="fa-solid fa-terminal skill-icon" aria-hidden="true"></i>
+                <h3>Python</h3>
+                <img src="img/python.png" alt="Python icon" class="skill-card-image">
+                <p>Writing efficient and scalable code.</p>
+            </div>
+
+            <div class="card">
+                <i class="fa-solid fa-calculator skill-icon" aria-hidden="true"></i>
+                <h3>MATLAB</h3>
+                <p>Analyzing data and solving engineering problems.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Hobbies Section -->
+    <section id="hobbies" class="section">
+        <h2>Hobbies</h2>
+
+        <div class="card-container">
+            <div class="card hobby-card engineering-card">
+                <div class="card-image"></div>
+                <h3>Engineering</h3>
+                <p>Building tools, solving problems, and creating systems.</p>
+            </div>
+
+            <div class="card hobby-card music-card">
+                <div class="card-image"></div>
+                <h3>Music</h3>
+                <p>Expression through acapella, alto saxophone, and guitar.</p>
+            </div>
+
+            <div class="card hobby-card fitness-card">
+                <div class="card-image"></div>
+                <h3>Fitness</h3>
+                <p>Taking care of my temple through activity and nutrition.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2026 Noah Baik | Personal Portfolio</p>
+    </footer>
+
 </body>
 </html>

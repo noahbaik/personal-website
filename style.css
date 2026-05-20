@@ -1,1 +1,202 @@
-/* Add you CSS here */
+/* Reset default spacing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f1ea;
+    color: #2f3e34;
+    line-height: 1.6;
+}
+
+/* Navigation */
+nav {
+    background-color: #355c4a;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 40px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #cfe8d5;
+}
+
+/* Hero Section */
+.hero {
+    height: 85vh;
+    background: url('https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?auto=format&fit=crop&w=2400&q=100');
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    color: white;
+    padding: 20px;
+}
+
+.hero-text h2 {
+    font-size: 3rem;
+    margin-bottom: 15px;
+}
+
+.hero-text p {
+    font-size: 1.2rem;
+    margin-bottom: 25px;
+}
+
+.hobby-card .card-image {
+    height: 180px;
+    border-radius: 10px;
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 20px;
+}
+
+.engineering-card .card-image {
+    background-image: url('https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=800&q=80');
+}
+
+.music-card .card-image {
+    background-image: url('https://images.unsplash.com/photo-1511379938547-c1f69419868d?auto=format&fit=crop&w=800&q=80');
+}
+
+.fitness-card .card-image {
+    background-image: url('https://images.unsplash.com/photo-1517836357463-d25dfeac3438?auto=format&fit=crop&w=800&q=80');
+}
+
+/* Button */
+.button {
+    background-color: #5c8d76;
+    color: white;
+    text-decoration: none;
+    padding: 12px 24px;
+    border-radius: 6px;
+    transition: background-color 0.3s;
+}
+
+.button:hover {
+    background-color: #476d5b;
+}
+
+/* Sections */
+.section {
+    padding: 70px 40px;
+    text-align: center;
+}
+.profile-photo {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    object-fit: cover;
+    display: block;
+    margin: 20px auto;
+    border: 5px solid rgba(255, 255, 255, 0.7);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+.section h2 {
+    font-size: 2.2rem;
+    margin-bottom: 20px;
+    color: #355c4a;
+}
+
+.section p {
+    max-width: 700px;
+    margin: auto;
+}
+
+/* Cards */
+.card-container {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+
+.card {
+    background-color: white;
+    width: 250px;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card h3 {
+    margin-bottom: 10px;
+    color: #3d5a50;
+}
+
+.skill-icon {
+    font-size: 2rem;
+    color: #5c8d76;
+    display: block;
+    margin: 0 auto 15px;
+}
+
+.skill-card-image {
+    width: 80px;
+    display: block;
+    margin: 0 auto 15px;
+}
+
+/* Footer */
+footer {
+    background-color: #355c4a;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Mobile Responsive Design */
+@media (max-width: 768px) {
+
+    nav {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .hero-text h2 {
+        font-size: 2.2rem;
+    }
+
+    .hero-text p {
+        font-size: 1rem;
+    }
+
+    .hero {
+        height: auto;
+        min-height: 60vh;
+    }
+
+    .section {
+        padding: 50px 20px;
+    }
+}
